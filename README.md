@@ -1,0 +1,2 @@
+# AngularPipesDemo
+Angular pipe Demo
