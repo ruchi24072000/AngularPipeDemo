@@ -3,11 +3,21 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TempratureConverterPipe } from './temprature-converter.pipe';
+import { AsyncPipeDemoComponent } from './async-pipe-demo/async-pipe-demo.component';
+import { KeyValuePipeComponent } from './key-value-pipe/key-value-pipe.component';
+import { PipeinComponentDemoComponent } from './pipein-component-demo/pipein-component-demo.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,CommonModule,TempratureConverterPipe],
+  imports: [RouterOutlet,
+    FormsModule,
+    CommonModule,
+    TempratureConverterPipe,
+    AsyncPipeDemoComponent,
+    KeyValuePipeComponent,
+    PipeinComponentDemoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 

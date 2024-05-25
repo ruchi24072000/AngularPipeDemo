@@ -1,0 +1,35 @@
+<ul>
+    <li *ngFor="let item of obj | keyvalue">
+      {{item.key}} :{{item.value}}</li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let item of mapObj | keyvalue">
+      {{item.key}} :{{item.value}}</li>
+  </ul>
+
+   <ul>
+    <li *ngFor="let item of obj | keyvalue : orderOriginal">
+      {{item.key}} : {{item.value}}</li>
+  </ul>
+   
+ 
+   
+  <ul>
+    <li *ngFor="let item of obj | keyvalue : orderbyValueAsc ">
+      {{item.key}} : {{item.value}}</li>
+  </ul>
+   
+  
+   
+  <ul>
+    <li *ngFor="let item of obj | keyvalue : orderbyValueDsc ">
+      {{item.key}} : {{item.value}}</li>
+  </ul>
+
+
+  <ul>
+    <li *ngFor="let item of breeds | keyvalue : orderClause ">
+      {{item.key}} : {{item.value}}</li>
+  </ul>
+  
